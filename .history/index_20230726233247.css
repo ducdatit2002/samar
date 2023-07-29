@@ -1,0 +1,133 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Hind", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: #636363;
+  font-weight: 400;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1199px;
+  margin: auto;
+}
+/* HEADER */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__content nav {
+  display: flex;
+  align-items: center;
+}
+.header__content nav ul {
+  display: flex;
+  margin-right: 30px;
+}
+.header__content li {
+  padding: 55px 15px;
+  list-style: none;
+}
+.header__content li a {
+  color: #070120;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+.header__content span {
+  display: inline-block;
+  transition: all 0.1s;
+}
+.header__content a:hover {
+  color: #f55f8d;
+}
+.header__content a:hover span {
+  animation: upToDown 0.3s;
+}
+.header__content i {
+  font-size: 9px;
+  margin-top: -3px;
+  vertical-align: middle;
+}
+.btn-gradient {
+  padding: 20px 35px;
+  font-size: 15px;
+  font-weight: 500;
+  background-image: linear-gradient(
+    to right,
+    #f55f8d 0,
+    #f8ae56 51%,
+    #f55f8d 100%
+  );
+  background-size: 200%;
+  border: 1px solid transparent;
+  transition: all 0.5s;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.btn-gradient:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+/* CAROUSEL */
+.saCarousel {
+    padding-top: 180px;
+    overflow: hidden;
+    background-image: url(./img/pic2.png);
+    background-position: top;
+    background-size: 100%;
+}
+.saCarousel__content {
+    display: flex;
+    align-items: center;
+}
+.saCarousel__left {
+    width: 60%;
+}
+.saCarousel__left .title p {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #f55f8d;
+}
+.title h2 {
+    font-size: 70px;
+    line-height: 1.1;
+    font-weight: 800;
+    color: #262626;
+    margin-bottom: 20px;
+}
+/*Animation */
+@keyframes upToDown {
+  49% {
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}

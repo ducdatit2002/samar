@@ -1,0 +1,30 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Hind", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: #636363;
+  font-weight: 400;
+  line-height: 1.6;
+}
+/* HEADER */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.container {
+    max-width: 1199px;
+    margin: auto;
+}
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
